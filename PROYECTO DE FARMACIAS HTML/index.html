@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turno Tupiza - Farmacias de Tupiza</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Turno Tupiza</h1>
+  <p>Farmacias de Tupiza - Potosi, Bolivia</p>
+</header>
+
+<main class="contenedor">
+
+  <input type="search" id="buscador" class="buscador" placeholder="Buscar farmacia por nombre, direccion o telefono..." autocomplete="off" aria-label="Buscar farmacia">
+  <p id="contador" class="contador" aria-live="polite"></p>
+  <p id="sin-resultados" class="sin-resultados" hidden>No se encontraron farmacias con esa busqueda.</p>
+  
+  <div class="lista-farmacias">
+  <div class="farmacia" id="farmacia-farmacia-siloe">
+    <div class="farmacia-imagen">
+      <img src="farmacia-siloe.jpg" alt="Foto de Farmacia Siloe" loading="lazy">
+    </div>
+    <h2>Farmacia Siloe</h2>
+    <p><span class="etiqueta">Direccion:</span> Arandia 204, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59173862021">+591 73862021</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4395461,-65.7193924&query_place_id=ChIJ0xi9dwApB5QRGNRKYp-MlNc" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-nacional-alfa-y-omega">
+    <div class="farmacia-imagen">
+      <img src="farmacia-nacional-alfa-y-omega.jpg" alt="Foto de Farmacia Nacional Alfa &amp; Omega" loading="lazy">
+    </div>
+    <h2>Farmacia Nacional Alfa &amp; Omega</h2>
+    <p><span class="etiqueta">Direccion:</span> Av. Santa Cruz, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59168646970">+591 68646970</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4438483,-65.7194692&query_place_id=ChIJ9T2aBeMpB5QReKlch0zLY6w" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-jerusalen">
+    <div class="farmacia-imagen">
+      <img src="farmacia-jerusalen.jpg" alt="Foto de Farmacia Jerusalen" loading="lazy">
+    </div>
+    <h2>Farmacia Jerusalen</h2>
+    <p><span class="etiqueta">Direccion:</span> Av. Diego de Almagro y Manuel Vaca S/N (Zona San Antonio), Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59173446167">+591 73446167</a> - <a href="tel:+59126945444">+591 2 6945444</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4312055,-65.7190037&query_place_id=ChIJcZQwDQApB5QRqBb1HjnKR5o" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-farmalucx">
+    <div class="farmacia-imagen">
+      <img src="WhatsApp Image 2026-11-15 at 8.05.57 PM.jpeg" alt="Foto de Farmacia Farmalucx" loading="lazy">
+    </div>
+    <h2>Farmacia Farmalucx</h2>
+    <p><span class="etiqueta">Direccion:</span> Calle Carlos Medinaceli N. 8, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59173470542">+591 73470542</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.43304,-65.7155044&query_place_id=ChIJ97vAfAApB5QRZQH5UO4PFUQ" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-chajrahuasi">
+    <div class="farmacia-imagen">
+      <img src="farmacia-chajrahuasi.jpg" alt="Foto de Farmacia Chajrahuasi" loading="lazy">
+    </div>
+    <h2>Farmacia Chajrahuasi</h2>
+    <p><span class="etiqueta">Direccion:</span> Zona Chajrahuasi, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4351495,-65.7153245&query_place_id=ChIJr8w4TAApB5QRvDRrD_M6IC8" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-san-juan-de-dios">
+    <div class="farmacia-imagen">
+      <img src="farmacia-san-juan-de-dios.jpg" alt="Foto de Farmacia San Juan de Dios" loading="lazy">
+    </div>
+    <h2>Farmacia San Juan de Dios</h2>
+    <p><span class="etiqueta">Direccion:</span> Tupiza (zona central)</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4480087,-65.7168818&query_place_id=ChIJGxZFpcEpB5QR4dgXv8DcHJ0" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-san-jose-av-avaroa">
+    <div class="farmacia-imagen">
+      <img src="farmacia-san-jose-av-avaroa.jpg" alt="Foto de Farmacia San Jose (Av. Avaroa)" loading="lazy">
+    </div>
+    <h2>Farmacia San Jose (Av. Avaroa)</h2>
+    <p><span class="etiqueta">Direccion:</span> Calle Avaroa, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59164682269">+591 64682269</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4434164,-65.7201288&query_place_id=ChIJV0Gx-NYpB5QRdmkftfMRkQA" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-rey-manias">
+    <div class="farmacia-imagen">
+      <img src="farmacia-rey-manias.jpg" alt="Foto de Farmacia Rey Manias" loading="lazy">
+    </div>
+    <h2>Farmacia Rey Manias</h2>
+    <p><span class="etiqueta">Direccion:</span> Plaza Independencia, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4444369,-65.7202643&query_place_id=ChIJOzWRXQApB5QRc6vqR90Qtzk" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-santo-remedios">
+    <div class="farmacia-imagen">
+      <img src="farmacia-santo-remedios.jpg" alt="Foto de Farmacia Santo Remedios" loading="lazy">
+    </div>
+    <h2>Farmacia Santo Remedios</h2>
+    <p><span class="etiqueta">Direccion:</span> Av. Remedios, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59175454285">+591 75454285</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4298832,-65.7187378&query_place_id=ChIJDeIpriUpB5QRiPAnCNRqirg" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmasol">
+    <div class="farmacia-imagen">
+      <img src="farmasol.jpg" alt="Foto de Farmasol" loading="lazy">
+    </div>
+    <h2>Farmasol</h2>
+    <p><span class="etiqueta">Direccion:</span> Av. Santa Cruz 261, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4435041,-65.7196761&query_place_id=ChIJU8p6w2wpB5QRA6JCx6PcAYM" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-luz-de-vida">
+    <div class="farmacia-imagen">
+      <img src="farmacia-luz-de-vida.jpg" alt="Foto de Farmacia Luz de Vida" loading="lazy">
+    </div>
+    <h2>Farmacia Luz de Vida</h2>
+    <p><span class="etiqueta">Direccion:</span> Av. Regimiento Chichas (esquina), Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59174516071">+591 74516071</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4456687,-65.7185432&query_place_id=ChIJ_RjHr84pB5QR3n4f2gImfxA" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-cristo-es-verdad">
+    <div class="farmacia-imagen">
+      <img src="farmacia-cristo-es-verdad.jpg" alt="Foto de Farmacia Cristo Es Verdad" loading="lazy">
+    </div>
+    <h2>Farmacia Cristo Es Verdad</h2>
+    <p><span class="etiqueta">Direccion:</span> Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59173853298">+591 73853298</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4282562,-65.7186333&query_place_id=ChIJ_8rguHYpB5QReohplECqZ5w" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-dobende">
+    <div class="farmacia-imagen">
+      <img src="farmacia-dobende.jpg" alt="Foto de Farmacia Dobende" loading="lazy">
+    </div>
+    <h2>Farmacia Dobende</h2>
+    <p><span class="etiqueta">Direccion:</span> Terminal de Omnibuses, Av. Pedro Arraya, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4473165,-65.7169755&query_place_id=ChIJUV4ECecpB5QRRxr9IkT7KAQ" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-senor-de-mayo">
+    <div class="farmacia-imagen">
+      <img src="farmacia-senor-de-mayo.jpg" alt="Foto de Farmacia Senor de Mayo" loading="lazy">
+    </div>
+    <h2>Farmacia Senor de Mayo</h2>
+    <p><span class="etiqueta">Direccion:</span> Av. Pedro Arraya s/n, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4467118,-65.7169799&query_place_id=ChIJ83YNvCcpB5QR6NPI3HD4jXA" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-cruz-azul">
+    <div class="farmacia-imagen">
+      <img src="farmacia-cruz-azul.jpg" alt="Foto de Farmacia Cruz Azul" loading="lazy">
+    </div>
+    <h2>Farmacia Cruz Azul</h2>
+    <p><span class="etiqueta">Direccion:</span> Calle Avaroa, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59174309902">+591 74309902</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4434681,-65.7191055&query_place_id=ChIJKS_yOrspB5QRruwx5X2fwaA" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-paulettfarma">
+    <div class="farmacia-imagen">
+      <img src="farmacia-paulettfarma.jpg" alt="Foto de Farmacia Paulettfarma" loading="lazy">
+    </div>
+    <h2>Farmacia Paulettfarma</h2>
+    <p><span class="etiqueta">Direccion:</span> Av. Santa Cruz s/n esq. Florida, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59163120202">+591 63120202</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4442119,-65.7194243&query_place_id=ChIJowWtifMpB5QRyQTzEgUZf_g" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-virgen-de-lujan">
+    <div class="farmacia-imagen">
+      <img src="farmacia-virgen-de-lujan.jpg" alt="Foto de Farmacia Virgen de Lujan" loading="lazy">
+    </div>
+    <h2>Farmacia Virgen de Lujan</h2>
+    <p><span class="etiqueta">Direccion:</span> Av. Santa Cruz, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4406802,-65.7200937&query_place_id=ChIJqfEaTw0pB5QRvnH6B40Camw" target="_blank">Ver en Google Maps</a>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmacia-santa-ines">
+    <div class="farmacia-imagen">
+      <img src="farmacia-santa-ines.jpg" alt="Foto de Farmacia Santa Ines" loading="lazy">
+    </div>
+    <h2>Farmacia Santa Ines</h2>
+    <p><span class="etiqueta">Direccion:</span> Suipacha 3, Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+    <a class="boton-mapa" href="https://www.google.com/maps/search/?api=1&query=-21.4479537,-65.7169102&query_place_id=ChIJ2wrBWwMpB5QRmnt7XkCEwws" target="_blank">Ver en Google Maps</a>
+  </div>
+
+
+  <div class="farmacia" id="farmacia-belen">
+    <div class="farmacia-imagen">
+      <img src="farmacia-belen.jpg" alt="Foto de Farmacia Belen" loading="lazy">
+    </div>
+    <h2>Farmacia Belen</h2>
+    <p><span class="etiqueta">Direccion:</span> Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> <a href="tel:+59161894954">+591 61894954</a> (WhatsApp) - <a href="tel:+59126945430">+591 2 6945430</a></p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+  </div>
+
+  <div class="farmacia" id="farmacia-farmalop">
+    <div class="farmacia-imagen">
+      <img src="farmacia-farmalop.jpg" alt="Foto de Farmacia Farmalop" loading="lazy">
+    </div>
+    <h2>Farmacia Farmalop</h2>
+    <p><span class="etiqueta">Direccion:</span> Tupiza</p>
+    <p><span class="etiqueta">Telefono:</span> No publicado</p>
+    <p><span class="etiqueta">Horario:</span> Lun-Vie: 08:30-12:30 y 15:00-20:00<br>Sab: 08:30-12:30<br>Dom: cerrado</p>
+  </div>
+
+  </div>
+
+</main>
+
+<footer>
+  Turno Tupiza - farmacias georreferenciadas - Potosi, Bolivia
+</footer>
+
+<script src="buscador.js"></script>
+</body>
+</html>
